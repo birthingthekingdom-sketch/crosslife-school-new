@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redeem Code - Cross Life School of Divinity</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span><i class="fas fa-phone-alt"></i> (555) 123-4567</span>
+                <span><i class="fas fa-envelope"></i> info@crosslife.edu</span>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="main-nav">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Cross Life School of Divinity</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="accreditation.html">Accreditation</a></li>
+                <li><a href="redeem.html" class="active">Redeem Code</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html" class="signup-btn">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" style="padding: 60px 0;">
+        <div class="container" style="max-width: 500px;">
+            <h1>Redeem Access Code</h1>
+            <p>Enter your access code below to unlock your courses</p>
+            
+            <div style="background: white; padding: 40px; border-radius: 10px; text-align: left; margin-top: 30px;">
+                <div style="margin-bottom: 20px;">
+                    <label style="display: block; margin-bottom: 10px; color: #333; font-weight: 600;">Access Code</label>
+                    <input type="text" id="code" placeholder="Enter your code (e.g., CROSSWAIT24)" style="width: 100%; padding: 15px; border: 2px solid #ddd; border-radius: 5px; font-size: 16px;">
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <label style="display: block; margin-bottom: 10px; color: #333; font-weight: 600;">Your Email</label>
+                    <input type="email" id="email" placeholder="your@email.com" style="width: 100%; padding: 15px; border: 2px solid #ddd; border-radius: 5px; font-size: 16px;">
+                </div>
+
+                <button onclick="redeemCode()" style="width: 100%; padding: 15px; background: #27ae60; color: white; border: none; border-radius: 5px; font-size: 18px; cursor: pointer; font-weight: 600;">Redeem Code</button>
+
+                <div id="message" style="margin-top: 20px; padding: 15px; border-radius: 5px; display: none;"></div>
+
+                <p style="margin-top: 30px; text-align: center; color: #666;">
+                    Don't have a code? <a href="courses.html" style="color: #3498db;">Browse our courses</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: #ecf0f1; padding: 60px 0;">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 40px;">How Access Codes Work</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+                <div style="text-align: center;">
+                    <i class="fas fa-ticket-alt" style="font-size: 48px; color: #3498db; margin-bottom: 20px;"></i>
+                    <h3>1. Get Your Code</h3>
+                    <p>Receive an access code after purchasing a course or through special promotions</p>
+                </div>
+                <div style="text-align: center;">
+                    <i class="fas fa-keyboard" style="font-size: 48px; color: #3498db; margin-bottom: 20px;"></i>
+                    <h3>2. Enter Code</h3>
+                    <p>Enter your code and email address above</p>
+                </div>
+                <div style="text-align: center;">
+                    <i class="fas fa-lock-open" style="font-size: 48px; color: #3498db; margin-bottom: 20px;"></i>
+                    <h3>3. Access Courses</h3>
+                    <p>Instantly unlock your courses and start learning</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cross Life School of Divinity. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function redeemCode() {
+            const code = document.getElementById('code').value;
+            const email = document.getElementById('email').value;
+            const messageDiv = document.getElementById('message');
+            
+            messageDiv.style.display = 'block';
+            
+            if (!code || !email) {
+                messageDiv.style.backgroundColor = '#ffebee';
+                messageDiv.style.color = '#c62828';
+                messageDiv.style.border = '1px solid #ef9a9a';
+                messageDiv.textContent = 'Please enter both code and email';
+                return;
+            }
+            
+            // For waiting students - special code
+            if (code.toUpperCase() === 'CROSSWAIT24') {
+                messageDiv.style.backgroundColor = '#e8f5e9';
+                messageDiv.style.color = '#2e7d32';
+                messageDiv.style.border = '1px solid #a5d6a7';
+                messageDiv.innerHTML = '<strong>Code redeemed successfully!</strong><br>Redirecting to course dashboard...';
+                
+                // Redirect after 2 seconds
+                setTimeout(() => {
+                    window.location.href = 'courses.html';
+                }, 2000);
+            } else {
+                messageDiv.style.backgroundColor = '#ffebee';
+                messageDiv.style.color = '#c62828';
+                messageDiv.style.border = '1px solid #ef9a9a';
+                messageDiv.textContent = 'Invalid code. Please check and try again.';
+            }
+        }
+    </script>
+</body>
+</html>
