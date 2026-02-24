@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Cross Life School of Divinity</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .course-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .course-code {
+            color: #3498db;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .course-title {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        .course-meta {
+            display: flex;
+            gap: 20px;
+            margin: 15px 0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .course-meta i {
+            margin-right: 5px;
+            color: #3498db;
+        }
+        
+        .btn-course {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        
+        .category-tag {
+            background: #ecf0f1;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span><i class="fas fa-phone-alt"></i> (555) 123-4567</span>
+                <span><i class="fas fa-envelope"></i> info@crosslife.edu</span>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="main-nav">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Cross Life School of Divinity</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html" class="active">Courses</a></li>
+                <li><a href="accreditation.html">Accreditation</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html" class="signup-btn">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" style="padding: 60px 0;">
+        <div class="container">
+            <h1>Our Courses</h1>
+            <p>Browse our comprehensive catalog of 24 courses designed for ministry leaders</p>
+        </div>
+    </section>
+
+    <div class="container" style="margin: 40px auto;">
+        <h2>Theology Courses (19)</h2>
+        <div class="course-grid">
+            <div class="course-card">
+                <span class="category-tag">Biblical Studies</span>
+                <div class="course-code">BIB101</div>
+                <div class="course-title">Old Testament Survey</div>
+                <div class="course-meta">
+                    <span><i class="fas fa-book"></i> 10 Lessons</span>
+                    <span><i class="fas fa-clock"></i> 30 CPD Hours</span>
+                </div>
+                <p>A comprehensive overview of the Old Testament, covering its books, themes, and historical context.</p>
+                <a href="#" class="btn-course">View Course</a>
+            </div>
+
+            <div class="course-card">
+                <span class="category-tag">Biblical Studies</span>
+                <div class="course-code">BIB102</div>
+                <div class="course-title">New Testament Survey</div>
+                <div class="course-meta">
+                    <span><i class="fas fa-book"></i> 10 Lessons</span>
+                    <span><i class="fas fa-clock"></i> 30 CPD Hours</span>
+                </div>
+                <p>Explore the Gospels, Epistles, and Revelation in this comprehensive New Testament overview.</p>
+                <a href="#" class="btn-course">View Course</a>
+            </div>
+
+            <div class="course-card">
+                <span class="category-tag">Biblical Studies</span>
+                <div class="course-code">BIB103</div>
+                <div class="course-title">Biblical Hermeneutics</div>
+                <div class="course-meta">
+                    <span><i class="fas fa-book"></i> 10 Lessons</span>
+                    <span><i class="fas fa-clock"></i> 30 CPD Hours</span>
+                </div>
+                <p>Learn proper methods for interpreting and applying Scripture in ministry contexts.</p>
+                <a href="#" class="btn-course">View Course</a>
+            </div>
+
+            <div class="course-card">
+                <span class="category-tag">Systematic Theology</span>
+                <div class="course-code">THE201</div>
+                <div class="course-title">Systematic Theology</div>
+                <div class="course-meta">
+                    <span><i class="fas fa-book"></i> 10 Lessons</span>
+                    <span><i class="fas fa-clock"></i> 30 CPD Hours</span>
+                </div>
+                <p>A comprehensive study of Christian doctrine, from bibliology to eschatology.</p>
+                <a href="#" class="btn-course">View Course</a>
+            </div>
+
+            <div class="course-card">
+                <span class="category-tag">Systematic Theology</span>
+                <div class="course-code">THE301</div>
+                <div class="course-title">Fundamentals of Apologetics</div>
+                <div class="course-meta">
+                    <span><i class="fas fa-book"></i> 10 Lessons</span>
+                    <span><i class="fas fa-clock"></i> 30 CPD Hours</span>
+                </div>
+                <p>Learn to defend the Christian faith with reason, evidence, and biblical truth.</p>
+                <a href="#" class="btn-course">View Course</a>
+            </div>
+
+            <div class="course-card">
+                <span class="category-tag">Divinity</span>
+                <div class="course-code">DIV101</div>
+                <div class="course-title">Understanding Prophecy</div>
+                <div class="course-meta">
+                    <span><i class="fas fa-book"></i> 10 Lessons</span>
+                    <span><i class="fas fa-clock"></i> 30 CPD Hours</span>
+                </div>
+                <p>Explore biblical prophecy, its interpretation, and its relevance for today.</p>
+                <a href="#" class="btn-course">View Course</a>
+            </div>
+        </div>
+
+        <h2 style="margin-top: 60px;">GED Preparation Courses (4)</h2>
+        <div class="course-grid">
+            <div class="course-card">
+                <span class="category-tag">GED Prep</span>
+                <div class="course-code">GED-MATH</div>
+                <div class="course-title">Mathematical Reasoning</div>
+                <div class="course-meta">
+                    <span><i class="fas fa-book"></i> 15 Lessons</span>
+                    <span><i class="fas fa-clock"></i> 45 CPD Hours</span>
+                </div>
+                <p>Complete preparation for the GED Mathematical Reasoning exam.</p>
+                <a href="#" class="btn-course">View Course</a>
+            </div>
+
+            <div class="course-card">
+                <span class="category-tag">GED Prep</span>
+                <div class="course-code">GED-RLA</div>
+                <div class="course-title">Reasoning Through Language Arts</div>
+                <div class="course-meta">
+                    <span><i class="fas fa-book"></i> 15 Lessons</span>
+                    <span><i class="fas fa-clock"></i> 45 CPD Hours</span>
+                </div>
+                <p>Master reading comprehension, grammar, and essay writing for the GED.</p>
+                <a href="#" class="btn-course">View Course</a>
+            </div>
+
+            <div class="course-card">
+                <span class="category-tag">GED Prep</span>
+                <div class="course-code">GED-SCIENCE</div>
+                <div class="course-title">Science</div>
+                <div class="course-meta">
+                    <span><i class="fas fa-book"></i> 15 Lessons</span>
+                    <span><i class="fas fa-clock"></i> 45 CPD Hours</span>
+                </div>
+                <p>Comprehensive coverage of life science, physical science, and earth/space science.</p>
+                <a href="#" class="btn-course">View Course</a>
+            </div>
+
+            <div class="course-card">
+                <span class="category-tag">GED Prep</span>
+                <div class="course-code">GED-SOCIAL</div>
+                <div class="course-title">Social Studies</div>
+                <div class="course-meta">
+                    <span><i class="fas fa-book"></i> 15 Lessons</span>
+                    <span><i class="fas fa-clock"></i> 45 CPD Hours</span>
+                </div>
+                <p>Study history, civics, economics, and geography for the GED exam.</p>
+                <a href="#" class="btn-course">View Course</a>
+            </div>
+        </div>
+
+        <h2 style="margin-top: 60px;">Chaplaincy Program (1)</h2>
+        <div class="course-grid">
+            <div class="course-card">
+                <span class="category-tag">Professional</span>
+                <div class="course-code">CHAP101</div>
+                <div class="course-title">Chaplaincy Training</div>
+                <div class="course-meta">
+                    <span><i class="fas fa-book"></i> 10 Lessons</span>
+                    <span><i class="fas fa-clock"></i> 30 CPD Hours</span>
+                </div>
+                <p>Professional chaplaincy certification with CPE equivalency. Includes hospital, military, and institutional ministry training.</p>
+                <a href="#" class="btn-course">View Course</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cross Life School of Divinity. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
