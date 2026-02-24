@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIB101 - Old Testament Survey | Cross Life School of Divinity</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .lesson-list {
+            list-style: none;
+            margin: 30px 0;
+        }
+        
+        .lesson-item {
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            margin-bottom: 15px;
+            padding: 15px 20px;
+            border-radius: 0 5px 5px 0;
+            transition: transform 0.2s;
+        }
+        
+        .lesson-item:hover {
+            transform: translateX(5px);
+            background: #ecf0f1;
+        }
+        
+        .lesson-title {
+            font-weight: 600;
+            color: #2c3e50;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .lesson-meta {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        .course-header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 60px 0;
+            margin-bottom: 40px;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 10px;
+            background: #ecf0f1;
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: #27ae60;
+            width: 0%;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span><i class="fas fa-phone-alt"></i> (555) 123-4567</span>
+                <span><i class="fas fa-envelope"></i> info@crosslife.edu</span>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="main-nav">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">Cross Life School of Divinity</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../courses.html">Courses</a></li>
+                <li><a href="../accreditation.html">Accreditation</a></li>
+                <li><a href="../login.html">Login</a></li>
+                <li><a href="../register.html" class="signup-btn">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="course-header">
+        <div class="container">
+            <span style="background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 20px; font-size: 0.9rem;">BIB101</span>
+            <h1 style="color: white; font-size: 2.5rem; margin: 20px 0 10px;">Old Testament Survey</h1>
+            <p style="font-size: 1.2rem; opacity: 0.9;">A comprehensive overview of the Old Testament, covering its books, themes, and historical context.</p>
+            
+            <div style="display: flex; gap: 30px; margin-top: 30px;">
+                <div><i class="fas fa-book"></i> 10 Lessons</div>
+                <div><i class="fas fa-clock"></i> 30 CPD Hours</div>
+                <div><i class="fas fa-tag"></i> $89.00</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="margin: 40px auto;">
+        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 40px;">
+            <div>
+                <h2>Course Lessons</h2>
+                
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%;"></div>
+                </div>
+                <p style="text-align: right; margin-bottom: 20px;">0% Complete</p>
+                
+                <ul class="lesson-list">
+                    <li class="lesson-item">
+                        <a href="#" class="lesson-title">Lesson 1: Introduction to the Old Testament</a>
+                        <div class="lesson-meta">
+                            <span><i class="fas fa-video"></i> 45 min video</span>
+                            <span style="margin-left: 20px;"><i class="fas fa-question-circle"></i> Quiz: 10 questions</span>
+                        </div>
+                    </li>
+                    <li class="lesson-item">
+                        <a href="#" class="lesson-title">Lesson 2: The Pentateuch (Genesis-Deuteronomy)</a>
+                        <div class="lesson-meta">
+                            <span><i class="fas fa-video"></i> 50 min video</span>
+                            <span style="margin-left: 20px;"><i class="fas fa-question-circle"></i> Quiz: 10 questions</span>
+                        </div>
+                    </li>
+                    <li class="lesson-item">
+                        <a href="#" class="lesson-title">Lesson 3: Historical Books (Joshua-Esther)</a>
+                        <div class="lesson-meta">
+                            <span><i class="fas fa-video"></i> 48 min video</span>
+                            <span style="margin-left: 20px;"><i class="fas fa-question-circle"></i> Quiz: 10 questions</span>
+                        </div>
+                    </li>
+                    <li class="lesson-item">
+                        <a href="#" class="lesson-title">Lesson 4: Wisdom Literature (Job-Song of Solomon)</a>
+                        <div class="lesson-meta">
+                            <span><i class="fas fa-video"></i> 52 min video</span>
+                            <span style="margin-left: 20px;"><i class="fas fa-question-circle"></i> Quiz: 10 questions</span>
+                        </div>
+                    </li>
+                    <li class="lesson-item">
+                        <a href="#" class="lesson-title">Lesson 5: Major Prophets (Isaiah-Daniel)</a>
+                        <div class="lesson-meta">
+                            <span><i class="fas fa-video"></i> 55 min video</span>
+                            <span style="margin-left: 20px;"><i class="fas fa-question-circle"></i> Quiz: 10 questions</span>
+                        </div>
+                    </li>
+                    <li class="lesson-item">
+                        <a href="#" class="lesson-title">Lesson 6: Minor Prophets (Hosea-Malachi)</a>
+                        <div class="lesson-meta">
+                            <span><i class="fas fa-video"></i> 47 min video</span>
+                            <span style="margin-left: 20px;"><i class="fas fa-question-circle"></i> Quiz: 10 questions</span>
+                        </div>
+                    </li>
+                    <li class="lesson-item">
+                        <a href="#" class="lesson-title">Lesson 7: Old Testament Themes and Theology</a>
+                        <div class="lesson-meta">
+                            <span><i class="fas fa-video"></i> 50 min video</span>
+                            <span style="margin-left: 20px;"><i class="fas fa-question-circle"></i> Quiz: 10 questions</span>
+                        </div>
+                    </li>
+                    <li class="lesson-item">
+                        <a href="#" class="lesson-title">Lesson 8: Messianic Prophecies</a>
+                        <div class="lesson-meta">
+                            <span><i class="fas fa-video"></i> 44 min video</span>
+                            <span style="margin-left: 20px;"><i class="fas fa-question-circle"></i> Quiz: 10 questions</span>
+                        </div>
+                    </li>
+                    <li class="lesson-item">
+                        <a href="#" class="lesson-title">Lesson 9: Old Testament and New Testament Connection</a>
+                        <div class="lesson-meta">
+                            <span><i class="fas fa-video"></i> 46 min video</span>
+                            <span style="margin-left: 20px;"><i class="fas fa-question-circle"></i> Quiz: 10 questions</span>
+                        </div>
+                    </li>
+                    <li class="lesson-item">
+                        <a href="#" class="lesson-title">Lesson 10: Practical Application of Old Testament Teachings</a>
+                        <div class="lesson-meta">
+                            <span><i class="fas fa-video"></i> 43 min video</span>
+                            <span style="margin-left: 20px;"><i class="fas fa-question-circle"></i> Quiz: 10 questions</span>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div style="margin-top: 40px;">
+                    <h3>Final Exam</h3>
+                    <div style="background: #f8f9fa; padding: 20px; border-radius: 10px;">
+                        <p><strong>Comprehensive Final Exam</strong> - 50 questions covering all course material</p>
+                        <p><i class="fas fa-certificate" style="color: #27ae60;"></i> Passing score: 70% required for certificate</p>
+                        <a href="#" style="display: inline-block; background: #27ae60; color: white; padding: 10px 30px; text-decoration: none; border-radius: 5px; margin-top: 10px;">Take Final Exam</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <div style="background: #f8f9fa; padding: 25px; border-radius: 10px; position: sticky; top: 100px;">
+                    <h3>Course Information</h3>
+                    
+                    <div style="margin: 20px 0;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                            <span>Category:</span>
+                            <span style="font-weight: 600;">Biblical Studies</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                            <span>Level:</span>
+                            <span style="font-weight: 600;">Beginner</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                            <span>Lessons:</span>
+                            <span style="font-weight: 600;">10</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                            <span>CPD Hours:</span>
+                            <span style="font-weight: 600;">30</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                            <span>Price:</span>
+                            <span style="font-weight: 600; color: #27ae60;">$89.00</span>
+                        </div>
+                    </div>
+                    
+                    <hr style="margin: 20px 0;">
+                    
+                    <h3>Instructor</h3>
+                    <div style="display: flex; align-items: center; gap: 15px; margin: 15px 0;">
+                        <i class="fas fa-user-circle" style="font-size: 48px; color: #3498db;"></i>
+                        <div>
+                            <div style="font-weight: 600;">Dr. James Mitchell</div>
+                            <div style="font-size: 0.9rem; color: #666;">Senior Theologian, 25+ years</div>
+                        </div>
+                    </div>
+                    
+                    <hr style="margin: 20px 0;">
+                    
+                    <h3>What's Included</h3>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: #27ae60;"></i> 10 video lessons</li>
+                        <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: #27ae60;"></i> Lesson quizzes</li>
+                        <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: #27ae60;"></i> Final exam</li>
+                        <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: #27ae60;"></i> CPD certificate</li>
+                        <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: #27ae60;"></i> Downloadable materials</li>
+                        <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: #27ae60;"></i> Lifetime access</li>
+                    </ul>
+                    
+                    <a href="#" style="display: block; background: #3498db; color: white; text-align: center; padding: 15px; text-decoration: none; border-radius: 5px; font-weight: 600; margin-top: 20px;">Enroll Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cross Life School of Divinity. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
